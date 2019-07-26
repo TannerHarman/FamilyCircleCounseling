@@ -1,0 +1,14 @@
+header {
+  width: 75%;
+}
+
+header > ul > li {
+  margin: 0px 10px;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+
+  height: 40px;
+
+  background: linear-gradient(#6888be 5%, #ccdbee 90%,#6888be);
+}
