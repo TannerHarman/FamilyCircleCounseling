@@ -1,39 +1,78 @@
 header {
   width: 100%;
   position: fixed;
-  bottom: 20px;
+  bottom: 0;
 }
 
-header > nav > ul {
-  border-radius: 50%;
+header > nav > ul > a > li,
+#navbar > li {
+  list-style-type: none;
+  text-align: center;
+}
+
+header > nav > ul > a,
+#navbar > li {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-show {
+  display: grid;
+}
+
+.menu-hide {
+  display:none;
+}
+
+#menu-items,
+#navbar {
   width: 90%;
-  margin: 5% auto;
+  max-width: 500px;
+  margin: auto;
   border: 1px solid #233c67;
   border-radius: 7px;
   overflow: hidden;
   background: #233c67;
 
-  display: grid;
   grid-row-gap: 1px;
+  margin-bottom: 30px;
 }
 
-header > nav > ul > a > li {
-  text-align: center;
-  list-style-type: none;
-  height: 40px;
-  background: #99afd7;
+#menu-items > a > li,
+#navbar > a > li,
+#navbar > li {
+  height: 50px;
+  background: linear-gradient(#ccdbee, #99afd7);
   display: grid;
   align-content: center;
   width: 100%;
   font-weight: bold;
 }
 
-header > nav > ul > a > li:hover {
-  background: #233c67;
+#menu-items > a > li:hover,
+#navbar > a > li:hover,
+#navbar > li:hover {
+  background: linear-gradient(#233c67, #4470ad) ;
   color: #ccdbee;
 }
 
-nav > ul > a {
-  text-decoration: none;
-  color: black;
+#navbar {
+  display: grid;
+  grid-column-gap: 1px;
+  grid-template-columns: 50px 50px 1fr 100px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0px;
+  border-radius: 0;
+}
+
+#navbar > a > .logo > img {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.menu-button {
+  font-size: 30px;
 }
