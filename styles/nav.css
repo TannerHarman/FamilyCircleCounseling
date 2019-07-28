@@ -26,7 +26,6 @@ header > nav > ul > a,
 
 #menu-items,
 #navbar {
-  width: 90%;
   max-width: 500px;
   margin: auto;
   border: 1px solid #233c67;
@@ -38,9 +37,7 @@ header > nav > ul > a,
   margin-bottom: 30px;
 }
 
-#menu-items > a > li,
-#navbar > a > li,
-#navbar > li {
+.menu-item {
   height: 50px;
   background: linear-gradient(#ccdbee, #99afd7);
   display: grid;
@@ -49,9 +46,7 @@ header > nav > ul > a,
   font-weight: bold;
 }
 
-#menu-items > a > li:hover,
-#navbar > a > li:hover,
-#navbar > li:hover {
+.menu-item:hover {
   background: linear-gradient(#233c67, #4470ad) ;
   color: #ccdbee;
 }
@@ -68,11 +63,20 @@ header > nav > ul > a,
 }
 
 #navbar > a > .logo > img {
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
+  height: 80%; 
+  border-radius: 50%;
+  background: white;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+#navbar > a > .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-button {
   font-size: 30px;
+  cursor: pointer;
 }
