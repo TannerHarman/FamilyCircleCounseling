@@ -4,14 +4,12 @@ header {
   bottom: 0;
 }
 
-header > nav > ul > a > li,
-#navbar > li {
+li {
   list-style-type: none;
   text-align: center;
 }
 
-header > nav > ul > a,
-#navbar > li {
+a {
   text-decoration: none;
   color: black;
 }
@@ -26,6 +24,7 @@ header > nav > ul > a,
 
 #menu-items,
 #navbar {
+  width: 90%;
   max-width: 500px;
   margin: auto;
   border: 1px solid #233c67;
@@ -55,28 +54,95 @@ header > nav > ul > a,
   display: grid;
   grid-column-gap: 1px;
   grid-template-columns: 50px 50px 1fr 100px;
-  justify-content: center;
   width: 100%;
   max-width: 100%;
   margin-bottom: 0px;
   border-radius: 0;
 }
 
+#navbar > a > .logo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+}
+
 #navbar > a > .logo > img {
-  height: 80%; 
+  height: 60%; 
   border-radius: 50%;
   background: white;
   padding: 2px;
-  margin-right: 10px;
-}
-
-#navbar > a > .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .menu-button {
   font-size: 30px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    top: 0;
+  }
+  
+  header > nav {
+    display: grid;
+    grid-template-columns: 3fr 5fr 1fr;
+    background: linear-gradient(#ccdbee, #99afd7);
+    border: 1px solid #233c67;
+  }
+
+  .menu-show,
+  .menu-hide {
+    display: grid;
+  }
+
+  nav > #menu-items,
+  nav > #navbar {
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 0px;
+    overflow: visible;
+  }
+
+  nav > #navbar {
+    grid-column: 1/2;
+    grid-row: 1 / 2;
+    background: transparent;
+
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 2fr;
+  }
+
+  nav > #menu-items {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin-bottom: 0px;
+    background: none;
+    grid-gap: 1px;
+  }
+
+  #logo {
+    grid-column: -1/-2;
+    border-left: 1px solid #233c67;
+  }
+
+  .menu-item {
+    border-right: 1px solid #233c67;
+  }
+
+  #phone {
+    grid-column: 1/2;
+  }
+
+  #email {
+    grid-column: 2 / 3;
+  }
+
+  #navbar > .menu-button {
+    display: none;
+  }
 }
