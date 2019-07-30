@@ -61,17 +61,25 @@ a {
 }
 
 #navbar > a > .logo {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-items: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-#navbar > a > .logo > img {
-  height: 60%; 
+#navbar > a > .logo > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  max-width: 300px;
+}
+
+.logo-img {
+  height: 100%; 
   border-radius: 50%;
   background: white;
   padding: 2px;
+  margin-right: 5px;
 }
 
 .menu-button {
