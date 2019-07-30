@@ -128,7 +128,7 @@ a {
   
   header > nav {
     display: grid;
-    grid-template-columns: 2fr 1fr minmax(500px, 750px) 2fr;
+    grid-template-columns: auto minmax(500px, 750px) auto;
     background: linear-gradient(#ccdbee, #99afd7);
     border: 1px solid #233c67;
   }
@@ -148,16 +148,16 @@ a {
   }
 
   nav > #navbar {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
     background: transparent;
 
     display: grid;
-    grid-template-columns: 1fr minmax(275px, 300px);
+    grid-template-columns: auto minmax(275px, 300px);
   }
 
   nav > #menu-items {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
 
     display: grid;
