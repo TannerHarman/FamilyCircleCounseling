@@ -42,7 +42,6 @@ a {
   display: grid;
   align-content: center;
   width: 100%;
-  font-weight: bold;
 }
 
 .menu-item:hover {
@@ -82,19 +81,54 @@ a {
   margin-right: 5px;
 }
 
-.menu-button {
+#navbar > .menu-button {
   font-size: 30px;
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-items > a > .menu-item > .fas {
+  margin-right: 0.5em;
+}
+
+#contact::after {
+  content: '(307) 347-4001';
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 950px) {
+  #contact::after {
+    content: '';
+  }
+
+  .menu-item {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  #contact::after {
+    content: '(307) 347-4001';
+  }
+
+  .menu-item {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 780px) {
   header {
     top: 0;
   }
   
   header > nav {
     display: grid;
-    grid-template-columns: 3fr 5fr 1fr;
+    grid-template-columns: 2fr 1fr minmax(500px, 750px) 2fr;
     background: linear-gradient(#ccdbee, #99afd7);
     border: 1px solid #233c67;
   }
@@ -114,16 +148,16 @@ a {
   }
 
   nav > #navbar {
-    grid-column: 1/2;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
     background: transparent;
 
     display: grid;
-    grid-template-columns: 50px 50px 1fr 2fr;
+    grid-template-columns: 1fr minmax(275px, 300px);
   }
 
   nav > #menu-items {
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
     grid-row: 1 / 2;
 
     display: grid;
@@ -140,17 +174,14 @@ a {
 
   .menu-item {
     border-right: 1px solid #233c67;
+    height: 40px;
   }
-
+  
+  #navbar > .menu-button,
+  #email,
   #phone {
-    grid-column: 1/2;
-  }
-
-  #email {
-    grid-column: 2 / 3;
-  }
-
-  #navbar > .menu-button {
     display: none;
   }
+
+  
 }
