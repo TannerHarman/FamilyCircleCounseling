@@ -17,7 +17,7 @@ main {
   justify-items: center;
   align-items: center;
 }
-/* 
+
 @keyframes slideBg {
   0% {
     background-image: url('https://raw.githubusercontent.com/Harmtan13/FamilyCircleCounseling/master/images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium.jpg');
@@ -34,7 +34,7 @@ main {
   75% {
     background-image: url('https://raw.githubusercontent.com/Harmtan13/FamilyCircleCounseling/master/images/sitePhotos/Hispanic-Family-outdoors-000019919637_Medium.jpg');
   }
-} */
+}
 
 main > section {
   height: 100%;
