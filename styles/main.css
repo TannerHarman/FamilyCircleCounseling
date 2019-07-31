@@ -6,13 +6,34 @@
 main {
   height: 100vh;
   width: 100%;
-  background: url(../images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium.jpg);
   background-position: center;
   background-size: cover;
-
+  background-repeat: no-repeat;
+  animation: slideBg 25s ease-in-out infinite 0s;
+  animation-timing-function: ease-in-out;
+  background-image: url('https://raw.githubusercontent.com/Harmtan13/FamilyCircleCounseling/master/images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium.jpg');
+    
   display: grid;
   justify-items: center;
   align-items: center;
+}
+
+@keyframes slideBg {
+  0%,100% {
+    background-image: url('https://raw.githubusercontent.com/Harmtan13/FamilyCircleCounseling/master/images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium.jpg');
+  }
+  
+  25% {
+    background-image: url('https://github.com/Harmtan13/FamilyCircleCounseling/blob/master/images/sitePhotos/DSC_2980-e1441519208574.jpg?raw=true');
+  }
+
+  50% {
+    background-image: url('https://raw.githubusercontent.com/Harmtan13/FamilyCircleCounseling/master/images/sitePhotos/cowboy-with-arms-crossed-in-stable-000052203674_Medium.jpg');
+  }
+  
+  75% {
+    background-image: url('https://raw.githubusercontent.com/Harmtan13/FamilyCircleCounseling/master/images/sitePhotos/Hispanic-Family-outdoors-000019919637_Medium.jpg');
+  }
 }
 
 main > section {
