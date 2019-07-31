@@ -9,7 +9,7 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  animation: slideBg 25s ease-in-out infinite 0s;
+  animation: slideBg 40s ease-in-out infinite 0s;
   animation-timing-function: ease-in-out;
   background-image: url('https://raw.githubusercontent.com/Harmtan13/FamilyCircleCounseling/master/images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium.jpg');
     
@@ -17,9 +17,9 @@ main {
   justify-items: center;
   align-items: center;
 }
-
+/* 
 @keyframes slideBg {
-  0%,100% {
+  0% {
     background-image: url('https://raw.githubusercontent.com/Harmtan13/FamilyCircleCounseling/master/images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium.jpg');
   }
   
@@ -34,12 +34,13 @@ main {
   75% {
     background-image: url('https://raw.githubusercontent.com/Harmtan13/FamilyCircleCounseling/master/images/sitePhotos/Hispanic-Family-outdoors-000019919637_Medium.jpg');
   }
-}
+} */
 
 main > section {
   height: 100%;
   width: 100%;
-  background: rgba(204, 219, 238, .3);
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
 
   display: grid;
   justify-items: center;
@@ -47,15 +48,39 @@ main > section {
   grid-row-gap: 50px;
 }
 
-main > section > img {
+main > section > .logo {
   width: 75%;
   max-width: 800px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  background: radial-gradient(farthest-side, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.0));
+}
+
+main > section > .logo > .logo-wrapper {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+main > section > .logo > .logo-wrapper > img {
+  width: 100%;
+  height: 100%;
 }
 
 #hero-caption {
   max-width: 600px;
   text-align: center;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
   margin: 0px 20px;
+  padding: 50px;
+  background: radial-gradient(farthest-side, rgba(0, 0, 0, 6), rgba(0, 0, 0, 0.0));
 }
