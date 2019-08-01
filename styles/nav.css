@@ -1,3 +1,20 @@
+@media screen and (max-width: 343px) {
+  nav > #navbar > a > .logo > div > p {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  nav > #navbar  {
+    grid-template-columns: 50px 1fr 50px;
+  }
+
+  nav > #navbar > #email {
+    display: none;
+  }
+}
+
 * {
   padding: 0px;
   margin: 0px;
