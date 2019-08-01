@@ -1,0 +1,97 @@
+main {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slideBg 80s ease-in-out infinite 0s;
+  animation-timing-function: ease-in-out;
+  background-image: url('../images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium.jpg');
+    
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+@keyframes slideBg {
+  0%, 100% {
+    background-image: url('../images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium.jpg');
+  }
+  
+  12.5% {
+    background-image: url('../images/sitePhotos/Portrait-Of-Father-And-Son-In-Countryside-000041060818_Medium.jpg');
+  }
+
+  25% {
+    background-image: url('../images/sitePhotos/DSC_2980-crop.jpg')
+  }
+
+  37.5% {
+    background-image: url('../images/sitePhotos/cowboy-with-arms-crossed-in-stable-000052203674_Medium.jpg');
+  }
+  
+  50% {
+    background-image: url('../images/sitePhotos/Hispanic-Family-outdoors-000019919637_Medium.jpg');
+  }
+
+  62.5% {
+    background-image: url('../images/sitePhotos/young-couple-looking-back-000052703928_Medium.jpg');
+  }
+
+  75% {
+    background-image: url('../images/sitePhotos/Father,-daughter-hugging-outdoors.-crop-000063011331_Medium.jpg');
+  }
+
+  87.5% {
+    background-image: url('../images/sitePhotos/Feeling-free crop-000026093351_Medium.jpg');
+  }
+}
+
+main > section {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-row-gap: 50px;
+}
+
+main > section > .logo {
+  width: 75%;
+  max-width: 800px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  background: linear-gradient(farthest-side, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.0));
+}
+
+main > section > .logo > .logo-wrapper {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+main > section > .logo > .logo-wrapper > img {
+  width: 100%;
+  height: 100%;
+}
+
+#hero-caption {
+  max-width: 600px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0px 20px;
+  padding: 50px;
+  background: radial-gradient(farthest-side, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.0));
+}
