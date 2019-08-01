@@ -1,5 +1,6 @@
 .heading {
   height: 80vh;
+  max-height: 800px;
   width: 100%;
   background-position: 0 10%;
   background-size: cover;
@@ -9,17 +10,18 @@
     
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
   align-items: center;
 }
 
 .heading > div {
-  grid-column: 2 / 3;
-
   display: grid;
   grid-gap: 20px;
   max-width: 500px;
-  margin: 0px 20px
+  margin: 0px -20px;
+  padding: 50px;
+  justify-items: start;
+
+  background: radial-gradient(farthest-side, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, .01));
 }
 
 .heading > div > div {
@@ -41,9 +43,45 @@ section {
 
 section img {
   width: 100%;
+  max-width: 300px;
+  margin: auto;
   border-radius: 50%;
 }
 
 section p {
   text-indent: 1.5em;
+}
+
+@media screen and (min-width: 780px) {
+  .heading {
+    grid-template-columns: 1fr 500px 3fr;
+    align-items: center;
+  }
+
+  .heading > div {
+    grid-column: 2 / 3
+  }
+}
+
+@media screen and (min-width: 899px) {
+  section {
+    grid-template-columns: 1fr 350px minmax(auto, 800px) 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+
+  section img {
+    grid-column: 2/3;
+  }
+
+  .content{
+    display: grid;
+    grid-gap: 15px;
+  }
+}
+
+.sign-off {
+  margin-top: 10px;
+  text-indent: 0;
 }
