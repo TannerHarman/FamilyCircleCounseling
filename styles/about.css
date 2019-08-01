@@ -1,0 +1,33 @@
+.heading {
+  height: 80vh;
+  width: 100%;
+  background-position: 0 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('../images/sitePhotos/I-love-you-000027632353_Medium.jpg');
+    
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.heading > div {
+  grid-column: 2 / 3;
+
+  display: grid;
+  grid-gap: 20px;
+  max-width: 500px;
+  margin: 0px 20px
+}
+
+.heading > div > div {
+  display: grid;
+  grid-gap: 5px;
+}
+
+.heading > div > div p:nth-child(2) {
+  font-size: 10px;
+  padding-left: 20px;
+}
