@@ -177,13 +177,13 @@ a {
     border: none;
     border-radius: 0px;
     color: white;
+    overflow: visible;
   }
 
   nav > #navbar {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     background: transparent;
-
     display: grid;
     grid-template-columns: minmax(275px, 300px) minmax(auto, 300px);
   }

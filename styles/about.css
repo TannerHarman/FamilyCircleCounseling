@@ -57,7 +57,7 @@ section p {
 
 .content{
   display: grid;
-  grid-gap: 13px;
+  grid-gap: 10px;
 }
 
 @media screen and (min-width: 780px) {
