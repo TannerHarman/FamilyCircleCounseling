@@ -1,18 +1,18 @@
 /* Nav color changes */
-
-header {
-  background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+@media screen and (min-width: 780px) {
+  header {
+    background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
+  
+  .menu-item {
+    color:  rgba(253, 251, 251, 1);
+  }
+  
+  .menu-item:hover {
+    color: white;
+    border-color: rgba(253, 251, 251, 1);
+  }
 }
-
-.menu-item {
-  color:  rgba(253, 251, 251, 1);
-}
-
-.menu-item:hover {
-  color: white;
-  border-color: rgba(253, 251, 251, 1);
-}
-
 
 main {
   height: 100vh;
