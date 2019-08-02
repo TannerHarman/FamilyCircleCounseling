@@ -11,6 +11,7 @@ main {
   display: grid;
   justify-items: center;
   align-items: center;
+
 }
 
 @keyframes slideBg {
@@ -94,4 +95,21 @@ main > section > .logo > .logo-wrapper > img {
   margin: 0px 20px;
   padding: 50px;
   background: radial-gradient(farthest-side, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.0));
+}
+
+@media screen and (max-height: 675px) {
+  main > section {
+    margin-bottom: 50px;
+  }
+
+  #hero-caption {
+    font-size: 14px;
+    margin: 0px 10px;
+    padding: 20px;
+  }
+
+  main > section {
+    grid-row-gap: 40px;
+  }
+
 }
