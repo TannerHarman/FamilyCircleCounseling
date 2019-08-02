@@ -176,7 +176,6 @@ a {
     max-width: 100%;
     border: none;
     border-radius: 0px;
-    overflow: visible;
     color: white;
   }
 
@@ -197,7 +196,7 @@ a {
     grid-template-columns: repeat(4, auto);
     margin-bottom: 0px;
     background: none;
-    grid-gap: 1px;
+    grid-gap: 5px;
   }
 
   #logo {
@@ -209,6 +208,14 @@ a {
     height: 40px;
     background: transparent;
     color: black;
+    border-bottom: 3px solid transparent;
+  }
+
+  .menu-item:hover {
+    overflow: hidden;
+    background: none;
+    color: black;
+    border-bottom: 3px solid black;
   }
   
   #navbar > .menu-button,
@@ -216,3 +223,4 @@ a {
   #phone {
     display: none;
   }
+}
