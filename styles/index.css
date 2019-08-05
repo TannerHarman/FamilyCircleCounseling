@@ -1,5 +1,5 @@
 /* Nav color changes */
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 881px) {
   header {
     background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   }
