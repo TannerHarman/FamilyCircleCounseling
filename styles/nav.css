@@ -160,8 +160,8 @@ a {
   
   header > nav {
     display: grid;
-    grid-template-columns: auto minmax(500px, 750px) auto;
-    color: black;
+    grid-template-columns: auto minmax(500px, 750px) minmax(25px, auto);
+    color: black; 
     max-width: 1500px;
   }
 
