@@ -149,7 +149,7 @@ a {
 
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 880px) {
   header {
     bottom: 0;
   }
