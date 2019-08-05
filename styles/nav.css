@@ -132,7 +132,7 @@ a {
   }
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 780px) {
   #contact::after {
     content: '(307) 347-4001';
   }
@@ -148,7 +148,7 @@ a {
   }
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 781px) {
   header {
     top: 0;
     display: grid;
