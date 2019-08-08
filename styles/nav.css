@@ -67,7 +67,7 @@ a {
 }
 
 .menu-item:hover {
-  background: linear-gradient(#233c67, #4470ad) ;
+  background: linear-gradient(#233c67, #4470ad);
   color: rgba(253, 251, 251, 1);
 }
 
@@ -167,7 +167,7 @@ a {
   
   header > nav {
     display: grid;
-    grid-template-columns: auto minmax(600px, 900px) minmax(10px, auto);
+    grid-template-columns: minmax(20px, auto) minmax(600px, 900px) minmax(20px, auto);
     color: black; 
     max-width: 1500px;
   }
