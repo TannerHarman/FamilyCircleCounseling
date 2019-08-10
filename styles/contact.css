@@ -1,5 +1,8 @@
 body {
-  background: linear-gradient(#ccdbee, #99afd7);
+  background: url(../images/sitePhotos/stock-photo-flat-lay-top-view-office-table-desk-workspace-with-blank-clip-board-keyboard-office-supplies-1038395059.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main {
