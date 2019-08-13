@@ -1,7 +1,9 @@
+[[headers]]
 /assets/fonts/*.woff
   Access-Control-Allow-Origin: *
   Content-Type: application/font-woff
 
+[[headers]]
 /assets/fonts/*.ttf
   Access-Control-Allow-Origin: *
   Content-Type: application/font-ttf
