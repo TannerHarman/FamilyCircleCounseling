@@ -110,7 +110,9 @@ main > section > .logo > .logo-wrapper > img {
   font-size: 16px;
   margin: 0px 20px;
   padding: 50px;
-  background: radial-gradient(farthest-side, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.0));
+  background: radial-gradient(farthest-side, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .15));
+  filter: drop-shadow(0 0 10px  rgba(0, 0, 0, .2));
+  box-shadow: 0 0 50px 20px rgba(0, 0, 0, .2);
 }
 
 @media screen and (max-height: 675px) {

@@ -17,13 +17,15 @@
   display: grid;
   grid-gap: 20px;
   max-width: 500px;
-  margin-left: -50px;
-  padding: 75px;
+  margin-left: 10px;
+  padding: 10px;
   justify-items: start;
   position: sticky;
   top: 21.5%;
   left: 0;
-  background: radial-gradient(farthest-side, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, .01));
+  background: radial-gradient(farthest-side, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, .15));
+  filter: drop-shadow(0 0 10px  rgba(255, 255, 255, .2));
+  box-shadow: 0 0 50px 20px rgba(255, 255, 255, .2);
 }
 
 .heading > div > div {
