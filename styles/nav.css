@@ -36,15 +36,7 @@ a {
   color: black;
 }
 
-.menu-show {
-  display: grid;
-}
-
-.menu-hide {
-  display:none;
-}
-
-#menu-items,
+.menu-items,
 #navbar {
   width: 90%;
   max-width: 500px;
@@ -55,7 +47,25 @@ a {
   background: #233c67;
 
   grid-row-gap: 1px;
+}
+
+#menu {
+  margin-bottom: -100px;
+  transform: scale(0);
+}
+
+#menu-hide {
+  margin-bottom: -100px;
+  transform: scale(0);
+
+  transition: all ease-out 150ms;
+}
+
+#menu-show {
   margin-bottom: 30px;
+  transform: scale(1);
+
+  transition: all ease-out 150ms;
 }
 
 .menu-item {
@@ -113,7 +123,7 @@ a {
   justify-content: center;
 }
 
-#menu-items > a > .menu-item > .fas {
+.menu-items > a > .menu-item > .fas {
   margin-right: 0.5em;
 }
 
@@ -131,7 +141,7 @@ a {
     font-size: 13px;
   }
 
-  #menu-items > a > .menu-item > .fas {
+  .menu-items > a > .menu-item > .fas {
     margin-right: 0.4em;
     font-size: 12px;
   }
@@ -177,7 +187,7 @@ a {
     display: grid;
   }
 
-  nav > #menu-items,
+  nav > .menu-items,
   nav > #navbar {
     width: 100%;
     max-width: 100%;
@@ -195,7 +205,7 @@ a {
     grid-template-columns: minmax(275px, 300px) minmax(auto, 300px);
   }
 
-  nav > #menu-items {
+  nav > .menu-items {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 
