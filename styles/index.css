@@ -26,15 +26,16 @@ main {
 }
 
 main > figure {
-  animation: backgroundSlideshow 30s linear infinite 0s;
-  backface-visibility: hidden;
+  animation: backgroundSlideshow 48s linear infinite 0s;
+ backface-visibility: hidden;
   background-size: cover;
   background-position: center;
+  color: transparent;
   height: 100%;
   width: 100%;
-  left: 0px;
   position: absolute;
   top: 0px;
+  left: 0px;
   opacity: 0;
   z-index: 0;
 }
@@ -48,11 +49,13 @@ main > figure:nth-child(1) {
 main > figure:nth-child(2) {
   animation-delay: 6s;
   background-image: url('../images/sitePhotos/Portrait-Of-Father-And-Son-In-Countryside-000041060818_Medium.jpg');
+  background-position: 80% center;
 }
 
 main > figure:nth-child(3) {
   animation-delay: 12s;
-  background-image: url('../images/sitePhotos/DSC_2980-crop.jpg')
+  background-image: url('../images/sitePhotos/DSC_2980-crop.jpg');
+  background-position: 60% center;
 }
 
 main > figure:nth-child(4) {
@@ -68,23 +71,26 @@ main > figure:nth-child(5) {
 main > figure:nth-child(6) {
   animation-delay: 30s;
   background-image: url('../images/sitePhotos/young-couple-looking-back-000052703928_Medium.jpg');
+  background-position: 80% center;
 }
 
 main > figure:nth-child(7) {
   animation-delay: 36s;
   background-image: url('../images/sitePhotos/Father,-daughter-hugging-outdoors.-crop-000063011331_Medium.jpg');
+  background-position: 40% center;
 }
 
 main > figure:nth-child(8) {
   animation-delay: 42s;
   background-image: url('../images/sitePhotos/Feeling-free crop-000026093351_Medium.jpg');
+  background-position: 70% center;
 }
 
 
 
 
 @keyframes backgroundSlideshow {
-  0%, 100% {
+  0% {
     animation-timing-function: ease-in;
     opacity: 0;
   }
@@ -102,7 +108,7 @@ main > figure:nth-child(8) {
     opacity: 0
   }
   
-  75% {
+  100% {
     opacity: 0
   }
 }
