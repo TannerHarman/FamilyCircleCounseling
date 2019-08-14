@@ -1,0 +1,25 @@
+main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+ width: 100%;
+ height: 100%;
+}
+
+.couples-program {
+  background: url('../images/sitePhotos/Loving-couple-with-eyes-closed-on-couch-000060553210_Medium.jpg');
+  background-position: 40% bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grief-program {
+  background: url('../images/sitePhotos/hands-grief-crop--525x350.jpg');
+  background-position:center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
