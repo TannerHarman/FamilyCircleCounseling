@@ -1,5 +1,8 @@
 footer {
-  background: linear-gradient(#233c67, #1d335a, #233c67);
+  background: linear-gradient(
+    #233c67 1%,
+    #1d335a 25% 75%,
+    #233c67 99%);
   margin-bottom: 50px;
   padding: 15px 10px;
   color: white;
