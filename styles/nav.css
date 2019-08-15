@@ -46,7 +46,8 @@ a {
   overflow: hidden;
   background: #233c67;
 
-  grid-row-gap: 1px;
+  display: grid;
+  grid-gap: 1px;
 }
 
 #menu {
