@@ -10,9 +10,7 @@ let setPhoneLink = () => {
   let iphone = navigator.userAgent.match(/iPhone/i)
   const phoneLink = document.querySelector('#phone');
 
-  let OS = getOS();
-
-  if (android || iphone {
+  if (android || iphone) {
     phoneLink.href = 'tel:+1-307-347-4001';
   }
 }
