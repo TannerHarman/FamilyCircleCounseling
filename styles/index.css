@@ -121,6 +121,10 @@ main > section {
   justify-items: center;
   align-content: center;
   z-index: 1;
+
+  background: radial-gradient(farthest-side, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .15));
+  filter: drop-shadow(0 0 10px  rgba(0, 0, 0, .2));
+  box-shadow: 0 0 5000px 2000px rgba(0, 0, 0, .2);
 }
 
 main > section > .logo {
@@ -131,7 +135,6 @@ main > section > .logo {
   justify-items: center;
   align-content: center;
   text-align: center;
-  background: linear-gradient(farthest-side, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.0));
 }
 
 main > section > .logo > h3 {
@@ -157,12 +160,13 @@ main > section > .logo > .logo-wrapper > img {
 
 #hero-caption {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 15px;
   padding: 50px;
+  padding-top: 25px;
+  text-align: center;
   background: radial-gradient(farthest-side, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .15));
   filter: drop-shadow(0 0 10px  rgba(0, 0, 0, .2));
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, .2);
-  text-align: center;
 }
 
 #hero-caption > p {
