@@ -18,12 +18,14 @@ let getOS = () => {
   return OSName;
 }
 
-let setPhoneLink = (getOS) => {
+let setPhoneLink = () => {
   let phoneLink = document.querySelector('#phone');
 
   let OS = getOS();
 
   if (OS == 'Android' || OS == 'iOS') {
-    phoneLink.href = 'tel:+1-307-347-4001'
+    phoneLink.href = 'tel:+1-307-347-4001';
   }
 }
+
+setPhoneLink();
