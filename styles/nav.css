@@ -182,9 +182,12 @@ a {
     max-width: 1500px;
   }
 
-  .menu-show,
-  .menu-hide {
+  #menu-show,
+  #menu-hide,
+  #menu {
     display: grid;
+    transform: scale(1);
+    margin: 0px;
   }
 
   nav > .menu-items,
