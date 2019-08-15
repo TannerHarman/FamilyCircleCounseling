@@ -76,7 +76,8 @@ a {
   width: 100%;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+#menu-button-active {
   background: linear-gradient(#233c67, #4470ad);
   color: rgba(253, 251, 251, 1);
 }
