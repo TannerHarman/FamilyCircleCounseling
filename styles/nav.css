@@ -43,7 +43,6 @@ a {
   margin: auto;
   border: 1px solid #233c67;
   border-radius: 7px;
-  overflow: hidden;
   background: #233c67;
 
   display: grid;
@@ -131,6 +130,33 @@ a {
 #contact::after {
   content: '(307) 347-4001';
   margin-left: 0.5em;
+}
+
+.hover-info[data-info] {
+  position: relative;
+}
+
+.hover-info[data-info]::before {
+  content: attr(data-info);
+  display: block;
+  position: absolute;
+  background: linear-gradient(rgba(253, 251, 251, 1), rgba(235, 237, 238, 1));
+  padding: 10px 20px;
+  border: 1px solid #233c67;
+  border-radius: 5px;
+  font-size: .8em;
+  bottom: 0;
+  left: 0;
+  white-space: nowrap;
+  z-index: 2;
+  transform: scale(0);
+  transition: transform ease-out 150ms,
+              bottom ease-out 150ms;
+}
+
+.hover-info[data-info]:hover::before {
+  transform: scale(1);
+  bottom: 120%;
 }
 
 @media screen and (max-width: 1350px) {
