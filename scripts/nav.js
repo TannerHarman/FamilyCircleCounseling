@@ -26,6 +26,8 @@ let setPhoneLink = () => {
   if (OS == 'Android' || OS == 'iOS') {
     phoneLink.href = 'tel:+1-307-347-4001';
   }
+
+  phoneLink.href = 'OS';
 }
 
 setPhoneLink();
