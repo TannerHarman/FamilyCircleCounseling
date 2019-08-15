@@ -8,12 +8,8 @@ menuButton.addEventListener('click', () => {
 let getOS = () => {
   let OSName = 'Unknown OS'
 
-  if (navigator.platform.indexOf('Win')!=-1) OSName='Windows';
-  if (navigator.platform.indexOf('Mac')!=-1) OSName='MacOS';
-  if (navigator.platform.indexOf('X11')!=-1) OSName='UNIX';
-  if (navigator.platform.indexOf('Linux')!=-1) OSName='Linux';
-  if (navigator.platform.indexOf('iPhone')!=-1) OSName='iOS';
-  if (navigator.platform.indexOf('Android')!=-1) OSName='Android';
+  if (navigator.userAgent.match(/iPhone/i)) OSName='iOS';
+  if (navigator.userAgent.match(/Android/i)) OSName='Android';
 
   return OSName;
 }
