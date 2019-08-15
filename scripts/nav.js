@@ -27,7 +27,7 @@ let setPhoneLink = () => {
     phoneLink.href = 'tel:+1-307-347-4001';
   }
 
-  phoneLink.href = 'OS';
+  phoneLink.href = OS;
 }
 
 setPhoneLink();
