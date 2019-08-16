@@ -1,11 +1,11 @@
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu-items');
 
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener('click', () => {
   menu.id == 'menu-hide' || menu.id == 'menu' ? menu.id = 'menu-show' : menu.id = 'menu-hide';
 });
 
-function setPhoneLink() {
+let setPhoneLink = () => {
   let android = navigator.userAgent.match(/Android/i);
   let iphone = navigator.userAgent.match(/iPhone/i)
   const phoneLink = document.querySelector('#phone');
