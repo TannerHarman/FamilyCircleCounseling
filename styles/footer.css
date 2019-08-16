@@ -49,4 +49,9 @@ footer > ul > li > h3 {
   ul > li:nth-child(3) {
     grid-area: terms;
   }
+
+  footer > ul > li > a {
+    color: white;
+    text-decoration: underline;
+  }
 }
