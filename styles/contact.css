@@ -10,7 +10,8 @@ main {
   min-height: 100vh;
   width: 100%;
   display: grid;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   justify-items: center;
 }
 
@@ -29,8 +30,13 @@ iframe {
 main > .content-wrapper {
   width: 100%;
   max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .contact-info,
@@ -48,7 +54,9 @@ main > .content-wrapper {
 section > form {
   display: grid;
   grid-gap: 15px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form-input {
@@ -56,8 +64,10 @@ section > form {
   height: 25px;
   border-radius: 3px;
   border: 1px solid #b1cbee;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-left: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dde6f3), to(#ccdbee));
   background: linear-gradient(#dde6f3, #ccdbee);
 }
 

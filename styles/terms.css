@@ -9,7 +9,7 @@ main > section {
 }
 
 section > ul > li {
-  list-style-type: disc; 
+  list-style-type: disc;
   text-align: left; 
   margin: 3px 0px 3px 3vw;
   line-height: 1.5em;
