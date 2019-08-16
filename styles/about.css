@@ -87,9 +87,7 @@ section p {
 }
 
 @media screen and (min-width: 899px) {
-  .heading {
-    background-size: auto 100%;
-  }
+  
   section {
     grid-template-columns: 1fr 350px minmax(auto, 800px) 1fr;
     justify-items: center;
@@ -107,4 +105,10 @@ section p {
 .sign-off {
   margin-top: 10px;
   text-indent: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    background-size: auto 100%;
+  }
 }
