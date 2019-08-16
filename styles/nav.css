@@ -105,6 +105,7 @@ a {
   justify-content: center;
   height: 30px;
   max-width: 300px;
+  white-space: nowrap;
 }
 
 .logo-img {
