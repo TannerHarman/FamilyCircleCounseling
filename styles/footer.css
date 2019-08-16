@@ -28,7 +28,7 @@ footer > ul > li > h3 {
 }
 
 footer > ul > li > a {
-  color: white;
+  color: inherit;
   text-decoration: underline;
 } 
 
