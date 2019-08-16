@@ -1,10 +1,10 @@
 const menuButton = document.querySelector('.menu-button');
-const menu = document.querySelector('.menu-items');
+const menuPopup = document.querySelector('.menu-items');
 
 menuButton.addEventListener('click', () => {
-  menu.id == 'menu-hide' || menu.id == 'menu' ? menu.id = 'menu-show' : menu.id = 'menu-hide';
+  menuPopup.id == 'menu-hide' || menuPopup.id == 'menu' ? menuPopup.id = 'menu-show' : menuPopup.id = 'menu-hide';
 
-  setTimeout( () => {if (menu.id ==  'menu-hide') menu.id = 'menu'}, 151);
+  setTimeout( () => {if (menuPopup.id ==  'menu-hide') menuPopup.id = 'menu'}, 151);
 });
 
 let setPhoneLink = () => {
