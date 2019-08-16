@@ -109,6 +109,6 @@ section p {
 
 @media screen and (max-width: 600px) {
   .heading {
-    background-size: auto 100%;
+    background-size: auto 100% !important;
   }
 }
