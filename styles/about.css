@@ -4,7 +4,7 @@
   width: 100%;
   background-image: url('../images/sitePhotos/I-love-you-000027632353_Medium.jpg');
   background-position: 60% top;
-  background-size: cover;
+  background-size: auto 100%;
   background-repeat: no-repeat;
     
   display: grid;
