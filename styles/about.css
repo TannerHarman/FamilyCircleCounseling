@@ -2,11 +2,11 @@
   height: 80vh;
   max-height: 800px;
   width: 100%;
+  background-image: url('../images/sitePhotos/I-love-you-000027632353_Medium.jpg');
   background-position: 60% top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url('../images/sitePhotos/I-love-you-000027632353_Medium.jpg');
     
   display: grid;
   grid-template-columns: 1fr;
@@ -91,8 +91,8 @@ section p {
     grid-template-columns: 1fr 350px minmax(auto, 800px) 1fr;
     justify-items: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+       -ms-flex-align: center;
+          align-items: center;
     padding: 50px 20px;
   }
 
