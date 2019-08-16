@@ -46,7 +46,6 @@ a {
   background: #233c67;
 
   display: grid;
-
 }
 
 #menu,
@@ -62,7 +61,6 @@ a {
 }
 
 #menu-show {
-  display:grid;
   grid-gap: 1px;
   margin-bottom: 30px;
   transform: scale(1);
