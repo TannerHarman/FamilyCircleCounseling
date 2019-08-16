@@ -16,11 +16,11 @@ let setPhoneLink = () => {
   if (android || iphone) {
     phoneLink.href = 'tel:+1-307-347-4001';
   } else if (location.pathname == "/index.html") {
-    phoneLink.href = email.Link = 'pages/contact.html';
+    phoneLink.href = emailLink.href = 'pages/contact.html';
     phoneLink.classList.add('hover-info');
     emailLink.classList.add('hover-info');
   } else {
-    phoneLink.href = email.Link = 'contact.html';
+    phoneLink.href = emailLink.href = 'contact.html';
     phoneLink.classList.add('hover-info');
     emailLink.classList.add('hover-info');
   }
