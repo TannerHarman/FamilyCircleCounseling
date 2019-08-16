@@ -46,7 +46,7 @@ a {
   background: #233c67;
 
   display: grid;
-  grid-gap: 1px;
+
 }
 
 #menu,
@@ -57,14 +57,19 @@ a {
 }
 
 #menu-hide {
-  transition: all ease-out 150ms;
+  transition: margin-bottom ease-out 150ms,
+              transform ease-out 150ms;
 }
 
 #menu-show {
+  display:grid;
+  grid-gap: 1px;
   margin-bottom: 30px;
   transform: scale(1);
+  overflow: hidden;
 
-  transition: all ease-out 150ms;
+  transition: margin-bottom ease-out 150ms,
+              transform ease-out 150ms;
 }
 
 .menu-item {
