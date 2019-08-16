@@ -1,0 +1,25 @@
+main {
+  margin: 100px auto;
+  padding: 0px 10vw;
+}
+
+main > section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+section > ul > li {
+  list-style-type: disc; 
+  text-align: left; 
+  margin: 3px 0px 3px 3vw;
+  line-height: 1.5em;
+}
+
+h1 {
+  text-align: center;
+  margin: 0px 0px 20px;
+}
+
+h4 {
+  margin: 20px 0px 5px;
+}
