@@ -6,7 +6,6 @@
   background-position: 60% top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
     
   display: grid;
   grid-template-columns: 1fr;
