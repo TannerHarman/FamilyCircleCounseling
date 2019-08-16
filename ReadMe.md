@@ -1,6 +1,5 @@
 # Task List
 
-* Complete phone & email button links using Javascript
 * Complete Services Page
 * Complete Financial Services Page
 * Complete Individual Services Page
