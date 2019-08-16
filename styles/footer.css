@@ -27,6 +27,10 @@ footer > ul > li > h3 {
   margin-bottom: 5px;
 }
 
+footer > ul > li > a {
+  color: white;
+  text-decoration: underline;
+}
 @media screen and (min-width: 881px) {
   body > footer {
     margin-bottom: 0px;
@@ -50,8 +54,4 @@ footer > ul > li > h3 {
     grid-area: terms;
   }
 
-  footer > ul > li > a {
-    color: white;
-    text-decoration: underline;
-  }
 }
