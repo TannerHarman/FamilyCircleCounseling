@@ -3,6 +3,12 @@ const menu = document.querySelector('.menu-items');
 
 menuButton.addEventListener('click', () => {
   menu.id == 'menu-hide' || menu.id == 'menu' ? menu.id = 'menu-show' : menu.id = 'menu-hide';
+
+  setTimeout( () => {
+    if (menu.id == 'menu-hide') {
+      menu.id = 'menu';
+    }
+  }, 151);
 });
 
 let setPhoneLink = () => {
