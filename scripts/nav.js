@@ -5,7 +5,7 @@ menuButton.addEventListener('click', function() {
   menu.id == 'menu-hide' || menu.id == 'menu' ? menu.id = 'menu-show' : menu.id = 'menu-hide';
 });
 
-let setPhoneLink = function() {
+function setPhoneLink() {
   let android = navigator.userAgent.match(/Android/i);
   let iphone = navigator.userAgent.match(/iPhone/i)
   const phoneLink = document.querySelector('#phone');
