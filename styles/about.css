@@ -106,9 +106,3 @@ section p {
   margin-top: 10px;
   text-indent: 0;
 }
-
-@media screen and (max-width: 600px) {
-  .heading {
-    background-size: auto 100% !important;
-  }
-}

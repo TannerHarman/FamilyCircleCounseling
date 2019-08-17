@@ -8,8 +8,9 @@ menuButton.addEventListener('click', () => {
 });
 
 let setPhoneLink = () => {
-  let android = navigator.userAgent.match(/Android/i);
-  let iphone = navigator.userAgent.match(/iPhone/i)
+  const android = navigator.userAgent.match(/Android/i);
+  const iphone = navigator.userAgent.match(/iPhone/i)
+  
   const phoneLink = document.querySelector('#phone');
   const emailLink = document.querySelector('#email');
 
