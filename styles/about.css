@@ -16,7 +16,7 @@
 }
 
 .heading {
-  height: 80vh;
+  height: 70vh;
   max-height: 800px;
   width: 100%;
   background-image: url('../images/sitePhotos/IMG_20190818_190414-min.jpg');
@@ -111,6 +111,14 @@ section p {
 }
 
 @media screen and (min-width: 949px) {
+  .heading {
+    height: 80vh;
+  }
+
+  .heading > div {
+    align-self: center;
+  }
+  
   section {
     grid-template-columns: 1fr 350px minmax(auto, 800px) 1fr;
     justify-items: center;
@@ -129,10 +137,6 @@ section p {
   .img-container > img {
     object-fit: cover;
     object-position: left bottom;
-  }
-
-  .heading > div {
-    align-self: center;
   }
 }
 
