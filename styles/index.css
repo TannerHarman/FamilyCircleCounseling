@@ -46,53 +46,53 @@ main > figure {
 }
 
 main > figure:nth-child(1) {
-  background-image: url('../images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium.jpg');
+  background-image: url('../images/sitePhotos/Happy-parents-with-their-children-000068068385_Medium-min.jpg');
 }
 
 main > figure:nth-child(2) {
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
-  background-image: url('../images/sitePhotos/Portrait-Of-Father-And-Son-In-Countryside-000041060818_Medium.jpg');
+  background-image: url('../images/sitePhotos/Portrait-Of-Father-And-Son-In-Countryside-crop_Medium-min.jpg');
   background-position: 80% 10%;
 }
 
 main > figure:nth-child(3) {
   -webkit-animation-delay: 12s;
           animation-delay: 12s;
-  background-image: url('../images/sitePhotos/DSC_2980-crop.jpg');
+  background-image: url('../images/sitePhotos/DSC_2980-crop-min.jpg');
   background-position: 60% 20%;
 }
 
 main > figure:nth-child(4) {
   -webkit-animation-delay: 18s;
           animation-delay: 18s;
-  background-image: url('../images/sitePhotos/cowboy-with-arms-crossed-in-stable-000052203674_Medium.jpg');
+  background-image: url('../images/sitePhotos/cowboy-with-arms-crossed-in-stable-000052203674_Medium-min.jpg');
 }
 
 main > figure:nth-child(5) {
   -webkit-animation-delay: 24s;
           animation-delay: 24s;
-  background-image: url('../images/sitePhotos/Hispanic-Family-outdoors-000019919637_Medium.jpg');
+  background-image: url('../images/sitePhotos/Hispanic-Family-outdoors-000019919637_Medium-min.jpg');
 }
 
 main > figure:nth-child(6) {
   -webkit-animation-delay: 30s;
           animation-delay: 30s;
-  background-image: url('../images/sitePhotos/young-couple-looking-back-000052703928_Medium.jpg');
+  background-image: url('../images/sitePhotos/young-couple-looking-back-000052703928_Medium-min.jpg');
   background-position: 80% top;
 }
 
 main > figure:nth-child(7) {
   -webkit-animation-delay: 36s;
           animation-delay: 36s;
-  background-image: url('../images/sitePhotos/Father,-daughter-hugging-outdoors.-crop-000063011331_Medium.jpg');
+  background-image: url('../images/sitePhotos/Father,-daughter-hugging-outdoors.-crop-000063011331_Medium-min.jpg');
   background-position: 40% top;
 }
 
 main > figure:nth-child(8) {
   -webkit-animation-delay: 42s;
           animation-delay: 42s;
-  background-image: url('../images/sitePhotos/Feeling-free crop-000026093351_Medium.jpg');
+  background-image: url('../images/sitePhotos/Feeling-free crop-000026093351_Medium-min.jpg');
   background-position: 70% center;
 }
 
