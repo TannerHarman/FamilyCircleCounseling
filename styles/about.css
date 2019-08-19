@@ -16,7 +16,7 @@
 }
 
 .heading {
-  height: 70vh;
+  height: 75vh;
   max-height: 800px;
   width: 100%;
   background-image: url('../images/sitePhotos/IMG_20190818_190414-min.jpg');
@@ -118,7 +118,7 @@ section p {
   .heading > div {
     align-self: center;
   }
-  
+
   section {
     grid-template-columns: 1fr 350px minmax(auto, 800px) 1fr;
     justify-items: center;
