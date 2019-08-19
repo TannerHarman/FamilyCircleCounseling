@@ -51,6 +51,8 @@
   max-width: 500px;
   margin: 20px;
   padding: 10px;
+  position: sticky;
+  top: 26%;
   justify-self: end;
   align-self: end;
   background: radial-gradient(farthest-side, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .3));
