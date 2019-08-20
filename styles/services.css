@@ -161,13 +161,16 @@ section::after {
   transition: opacity linear 300ms;
 }
 
-.invite > * a {
-  color: white;
-}
-
 .button {
   padding: 1em 2em;
-  background: blue;
+  border-radius: 5px;
+  background: #6888BE;
+  color: black;
+}
+
+.button:hover {
+  background: #233c67;
+  color: white;
 }
 
 
@@ -181,8 +184,4 @@ section::after {
   main {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-.preload {
-  display: none;
 }
