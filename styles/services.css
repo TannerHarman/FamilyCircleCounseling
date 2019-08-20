@@ -17,7 +17,25 @@ section {
  overflow: hidden;
 }
 
-.couples-program {
+.opacity-zero,
+.opacity-one {
+  opacity: 0;
+  transition: opacity linear 300ms;
+}
+
+.opacity-one {
+  opacity: 1;
+}
+
+.couples-program,
+.couples-program-active {
+  color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
   background: url('../images/sitePhotos/Difficulties-in-relationship-473153024_1258x838-min.jpeg');
   background-position: center bottom;
   background-size: cover;
@@ -31,7 +49,15 @@ section {
   background-repeat: no-repeat;
 }
 
-.grief-program {
+.grief-program,
+.grief-program-active {
+  color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
   background: url('../images/sitePhotos/Woman-sitting-on-windowsill,-looking-out-of-window,-crying-521086706_1258x837-min.jpeg');
   background-position:80% bottom;
   background-size: cover;
@@ -99,7 +125,7 @@ section::after {
 
 .active::before,
 .active::after {
-  display:none;
+  display: none;
 }
 
 .invite > h1 {
@@ -113,12 +139,15 @@ section::after {
 
 .active > .problem {
   opacity: 0;
+  transition: opacity linear 100ms;
 }
 
 .invite > .solution {
   position: absolute;
-  bottom: -110%;
+  bottom: 0;
   padding: 1.2em;
+  opacity: 0;
+  z-index: -1;
 
   display: grid;
   grid-gap: .5em;
@@ -126,8 +155,9 @@ section::after {
 }
 
 .active > .solution {
-  position: absolute;
-  bottom: 0;
+  opacity: 1;
+  z-index: 1;
+  transition: opacity linear 300ms;
 }
 
 .invite > * a {
