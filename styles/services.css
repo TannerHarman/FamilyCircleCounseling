@@ -84,22 +84,23 @@ section > .invite::after,
 section > .invite::before {
   content: '';
   position: absolute;
-  bottom: 90%;
+  bottom: 100%;
   left: 50%;
   width: 40px;
   height: 40px;
   transform: translateX(-50%)
-             rotate(45deg);
+             rotate(225deg);
 
   border-top: 2px solid white;
   border-left: 2px solid white;
   animation: animate 1.5s linear infinite;
   opacity: 0;
+  animation-delay: 0.25s;
 }
 
 section > .invite::before {
-  bottom: 110%;
-  animation-delay: 0.25s;
+  bottom: 120%;
+  animation-delay: 0.0s;
 }
 
 @keyframes animate {
