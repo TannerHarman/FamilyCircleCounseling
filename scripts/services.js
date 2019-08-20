@@ -5,7 +5,7 @@ if (touchDevice) {
   invites.forEach(invite => {
     invite.addEventListener('click', () => {
       invite.classList.toggle('active');
-      if (parentElement.classList.contains('couples-program')){
+      if (invite.parentElement.classList.contains('couples-program')){
         invite.parentElement.classList.toggle('couples-program-active')
       } else {
         invite.parentElement.classList.toggle('grief-program-active')
@@ -15,21 +15,21 @@ if (touchDevice) {
 } else {
   invites.forEach(invite => {
     invite.addEventListener('mouseover', () => {
+      invite.classList.add('active');
       if (invite.parentElement.classList.contains('couples-program')) {
-        invite.parentElement.classList.add('couples-program-active');
+        invite.parentElement.classList.toggle('couples-program-active');
       } else {
-        invite.parentElement.classList.add('grief-program-active');
+        invite.parentElement.classList.toggle('grief-program-active');
       }
     });
   
     invite.addEventListener('mouseout', () => {
       invite.classList.remove('active');
       if (invite.parentElement.classList.contains('couples-program-active')) {
-        invite.parentElement.classList.remove('couples-program-active');
+        invite.parentElement.classList.toggle('couples-program-active');
       } else {
-        invite.parentElement.classList.remove('grief-program-active')
+        invite.parentElement.classList.toggle('grief-program-active')
       }
-      
     });
   });
 }
