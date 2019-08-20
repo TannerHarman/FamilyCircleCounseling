@@ -18,18 +18,33 @@ section {
 }
 
 .couples-program {
-  background: url('../images/sitePhotos/Loving-couple-with-eyes-closed-on-couch-000060553210_Medium-min.jpg');
-  background-position: 40% bottom;
+  background: url('../images/sitePhotos/Difficulties-in-relationship-473153024_1258x838-min.jpeg');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.couples-program-active {
+  background: url('../images/sitePhotos/Its-just-you-and-me-babe-1049240750_1256x838-min.jpeg');
+  background-position: 35% center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .grief-program {
-  background: url('../images/sitePhotos/hands-grief-crop--525x350.jpg');
-  background-position:center bottom;
+  background: url('../images/sitePhotos/Woman-sitting-on-windowsill,-looking-out-of-window,-crying-521086706_1258x837-min.jpeg');
+  background-position:80% bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.grief-program-active {
+  background: url('../images/sitePhotos/beautiful-sexy-woman-on-the-nature-000030468422_Medium-min.jpg');
+  background-position:center 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 section > .invite {
 z-index: 1;
 padding: 1.2em;
