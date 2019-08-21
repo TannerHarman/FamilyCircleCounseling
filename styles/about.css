@@ -95,6 +95,10 @@ section p {
   grid-gap: 10px;
 }
 
+.button {
+  place-self: center;
+}
+
 @media screen and (min-width: 949px) {
   .heading {
     height: 80vh;

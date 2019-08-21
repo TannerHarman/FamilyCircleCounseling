@@ -8,3 +8,15 @@
 p {
   line-height: 1.5em;
 }
+
+.button {
+  padding: 1em 2em;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 251, 251, 1)), to(rgba(235, 237, 238, 1)));
+  background: linear-gradient(rgba(253, 251, 251, 1), rgba(235, 237, 238, 1));
+  color: black;
+}
+
+.button:hover {
+  background: #99afd7;
+}

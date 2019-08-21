@@ -186,6 +186,7 @@ main > section > .logo > .logo-wrapper > img {
 #hero-caption {
   display: grid;
   grid-gap: 15px;
+  place-items: center;
   padding: 5vw;
   padding-top: 3vh;
   text-align: center;
