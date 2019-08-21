@@ -103,7 +103,8 @@ a {
   color:white;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.menu-item:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 251, 251, 1)), to(rgba(235, 237, 238, 1)));
   background: linear-gradient(rgba(253, 251, 251, 1), rgba(235, 237, 238, 1));
   color: black;
@@ -322,7 +323,9 @@ a {
     border-bottom: 3px solid transparent;
   }
 
-  .menu-item:hover {
+  .menu-item:hover,
+  .menu-item:focus,
+  .current-page {
     overflow: hidden;
     background: none;
     color: white;
