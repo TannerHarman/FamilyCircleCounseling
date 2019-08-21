@@ -1,20 +1,3 @@
-/* Nav color changes */
-@media screen and (min-width: 881px) {
-  header {
-    background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-    background: linear-gradient( rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  }
-  
-  .menu-item {
-    color:  rgba(253, 251, 251, 1);
-  }
-  
-  .menu-item:hover {
-    color: white;
-    border-color: rgba(253, 251, 251, 1);
-  }
-}
-
 .heading {
   height: 75vh;
   max-height: 800px;
