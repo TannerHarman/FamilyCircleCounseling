@@ -1,0 +1,39 @@
+.heading {
+  min-height: 75vh;
+  display: grid;
+  place-items: start;
+  background: url(../images/sitePhotos/test-folder/219bc5665457256cd71c3252c340fad4.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.opening {
+  width: 60vw;
+  height: 60vw;
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 300px;
+  max-height: 300px;
+  background: url(../images/sitePhotos/test-folder/a924786ae1243f5a011d9a5f03d60d14.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .9;
+  margin: 20px;
+  margin-top: 50px;
+  border-radius: 2px;
+  display: grid;
+}
+
+.opening > p {
+  font-size: 13px;
+  margin: 15px;
+  border: 1px solid black;
+  padding: 10px;
+  background: rgb(204, 219, 238);
+  border-radius: 2px;
+  display: grid;
+  place-content: center;
+  opacity: 1;
+}
