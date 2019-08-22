@@ -10,14 +10,14 @@
 }
 
 .opening {
-  width: 60vw;
-  height: 60vw;
-  min-width: 250px;
-  min-height: 250px;
-  max-width: 300px;
-  max-height: 300px;
+  width: 75vw;
+  height: 75vw;
+  min-width: 275px;
+  min-height: 275px;
+  max-width: 400px;
+  max-height: 400px;
   background: url(../images/sitePhotos/test-folder/a924786ae1243f5a011d9a5f03d60d14.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   opacity: .9;
   margin: 20px;
@@ -27,13 +27,39 @@
 }
 
 .opening > p {
-  font-size: 13px;
-  margin: 15px;
+  font-size: 3.75vw;
+  margin: 20px;
   border: 1px solid black;
-  padding: 10px;
+  padding: 8px;
   background: rgb(204, 219, 238);
   border-radius: 2px;
   display: grid;
   place-content: center;
-  opacity: 1;
+}
+
+.opening > p > span {
+  font-size: 4.25vw;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 366px) {
+  .opening > p > span {
+    font-size: x;
+  }
+
+  .opening > p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 534px) {
+  .opening > p {
+    font-size: 21px;
+  }
+
+  .opening > p > span {
+    font-size: 25px;
+  }
 }
