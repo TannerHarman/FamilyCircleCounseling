@@ -27,7 +27,6 @@
 }
 
 .opening > p {
-  font-size: 3.75vw;
   margin: 20px;
   border: 1px solid black;
   padding: 8px;
@@ -37,29 +36,141 @@
   place-content: center;
 }
 
-.opening > p > span {
-  font-size: 4.25vw;
+.responsive-text {
+  font-size: 3.75vw;
+}
+
+.responsive-title {
+  font-size: 4.3vw;
   text-align: center;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
+section[class = 'grow-old'] {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr auto 18.75vw auto 1fr;
+  grid-template-rows: auto auto 31.25vw auto;
+}
+
+.grow-old > p:first-child,
+.grow-old > p:last-child {
+  grid-column: 1/-1;
+  padding: 30px 0px 10px 0px;
+}
+
+.grow-old > p:last-child {
+  max-width: 800px;
+  margin: 2.5vw 6.25vw;
+}
+
+.poloroid {
+  display: grid;
+  place-items: center;
+  background: white;
+  padding: 2.5vw;
+  padding-bottom: 0px;
+  box-shadow: 0px 0px 8px 0px #E3DFEE;
+}
+
+.young-couple {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  place-self: end;
+}
+
+.to {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  display: grid;
+  place-self: stretch;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+.to::after,
+.to::before {
+  content: '';
+  background-color: #233c67;
+  padding: 6.25vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -6.25vw;
+  margin-top: -6.25vw;
+  z-index: -1;
+  transform: rotate(4deg);
+}
+
+.to::after {
+  transform: rotate(-4deg);
+  background-color: #ccdbee;
+}
+
+.old-farts {
+  grid-column: 3/-2;
+  grid-row: 3/-1;
+  place-self: start;
+}
+
+.poloroid > img {
+  width: 50vw;
+  height: 50vw;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: 30% center;
+}
+
+.poloroid > p {
+  padding: 3.125vw 0px;
+}
+
 @media screen and (max-width: 366px) {
-  .opening > p > span {
-    font-size: x;
+  .responsive-text {
+    font-size: 14px;
   }
 
-  .opening > p {
-    font-size: 14px;
+  .responsive-title {
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 534px) {
-  .opening > p {
+  .responsive-text {
     font-size: 21px;
   }
 
-  .opening > p > span {
+  .responsive-title {
     font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .poloroid {
+    padding: 20px;
+  }
+
+  section[class = 'grow-old'] {
+    grid-template-columns: 1fr auto 150px auto 1fr;
+    grid-template-rows: auto auto 250px auto;
+  }
+
+  .poloroid > p {
+    padding: 25px 0px;
+  }
+
+  .grow-old > p:last-child {
+    max-width: 800px;
+    margin: 20px 50px;
+  }
+
+  .to::after,
+  .to::before {
+    padding: 50px;
+    margin-left: -50px;
+    margin-top: -50px;
   }
 }
