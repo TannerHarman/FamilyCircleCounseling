@@ -1,15 +1,22 @@
-.heading {
+section {
   min-height: 75vh;
+  margin: 20px 0px;
+}
+
+.heading {
   display: grid;
-  place-items: start;
+  align-items: center;
+  grid-template-columns: 1fr minmax(200px, 1000px) 1fr;
   background: url(../images/sitePhotos/test-folder/219bc5665457256cd71c3252c340fad4.jpg);
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0px;
 }
 
 .opening {
+  grid-column: 2/3;
   width: 75vw;
   height: 75vw;
   min-width: 275px;
@@ -60,7 +67,8 @@ section[class = 'grow-old'] {
   padding: 30px 0px 10px 0px;
 }
 
-.grow-old > p:last-child {
+.grow-old > p:last-child,
+.full-paragraph {
   max-width: 800px;
   margin: 2.5vw 6.25vw;
 }
@@ -72,6 +80,19 @@ section[class = 'grow-old'] {
   padding: 2.5vw;
   padding-bottom: 0px;
   box-shadow: 0px 0px 8px 0px #E3DFEE;
+}
+
+.poloroid > img {
+  width: 50vw;
+  height: 50vw;
+  max-width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: 30% center;
+}
+
+.poloroid > p {
+  padding: 3.125vw 0px;
 }
 
 .young-couple {
@@ -115,17 +136,26 @@ section[class = 'grow-old'] {
   place-self: start;
 }
 
-.poloroid > img {
-  width: 50vw;
-  height: 50vw;
-  max-width: 400px;
-  max-height: 400px;
-  object-fit: cover;
-  object-position: 30% center;
+section[class = 'need-love'] {
+  display: grid;
+  place-items: center;
 }
 
-.poloroid > p {
-  padding: 3.125vw 0px;
+.need-love > img {
+  width: 95vw;
+  height: auto;
+  max-width: 500px;
+  background-color: white;
+  padding: 1.5vw;
+  border: 4vw solid #99afd7;
+  border-radius: 2px;
+  box-shadow: 0px 0px 8px 0px #E3DFEE;
+}
+
+.closing > img {
+  width: 95vw;
+  height: auto;
+  max-width: 500px;
 }
 
 @media screen and (max-width: 366px) {
@@ -162,7 +192,8 @@ section[class = 'grow-old'] {
     padding: 25px 0px;
   }
 
-  .grow-old > p:last-child {
+  .grow-old > p:last-child,
+  .full-paragraph{
     max-width: 800px;
     margin: 20px 50px;
   }
@@ -172,5 +203,10 @@ section[class = 'grow-old'] {
     padding: 50px;
     margin-left: -50px;
     margin-top: -50px;
+  }
+
+  .need-love > img {
+    padding: 12px;
+    border-width: 32px;
   }
 }
