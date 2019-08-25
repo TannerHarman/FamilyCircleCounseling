@@ -1,19 +1,18 @@
 section {
-  margin: 20px 0px;
+  margin-bottom: 100px;
 }
 
 .heading {
   min-height: 75vh;
   display: grid;
-  align-items: end;
+  align-items: start;
   justify-items: end;
   grid-template-columns: 1fr minmax(200px, 1000px) 1fr;
   background: url(../images/sitePhotos/bride-and-groom-holding-hands-1067809862_4389x4389-min.jpeg);
-  background-position: 100% 80%;
+  background-position: 45% 80%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 0px;
 }
 
 .opening {
@@ -66,7 +65,6 @@ section[class = 'grow-old'] {
 .grow-old > h3,
 .full-paragraph {
   grid-column: 1/-1;
-  padding: 30px 0px 10px 0px;
 }
 
 .full-paragraph {
