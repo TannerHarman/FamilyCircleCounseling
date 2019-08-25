@@ -1,9 +1,9 @@
 section {
-  min-height: 75vh;
   margin: 20px 0px;
 }
 
 .heading {
+  min-height: 75vh;
   display: grid;
   align-items: end;
   justify-items: end;
@@ -161,7 +161,7 @@ section[class = 'need-love'],
   box-shadow: 0px 0px 8px 0px #E3DFEE;
   transform: rotate(-2deg);
   z-index: -1;
-  margin-bottom: -100px;
+  margin-bottom: -75px;
 }
 
 .need-love > img {
@@ -248,7 +248,7 @@ section[class = 'need-love'],
   section[class = 'need-love'],
   .closing {
     grid-template-columns: 1fr auto 300px auto 1fr;
-    grid-template-rows: auto auto 350px auto;
+    grid-template-rows: auto auto 500px auto;
   }
 
   .need-love .responsive-title,
@@ -261,7 +261,6 @@ section[class = 'need-love'],
   .closing img {
     grid-column: 2/4;
     grid-row: 2/-2;
-    justify-self: end;
     align-self: start;
   }
 
@@ -269,10 +268,13 @@ section[class = 'need-love'],
   .closing .full-paragraph {
     grid-column: -4/-2;
     grid-row: 3/-1;
-    justify-self: start;
   }
 
   .closing .full-paragraph {
-    margin-top: 75px;
+    margin-top: 180px;
+  }
+
+  .closing img {
+    margin-top: 30px;
   }
 }
