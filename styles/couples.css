@@ -181,6 +181,18 @@ section[class = 'need-love'],
   grid-gap: 15px;
 }
 
+.cycle {
+  display: grid;
+}
+
+.cycle iframe {
+  width: 90vw;
+  height: 50.625vw;
+  margin: 15px auto;
+  max-width: 1000px;
+  max-height: 562.5px;
+}
+
 @media screen and (max-width: 366px) {
   .responsive-text {
     font-size: 14px;
@@ -276,3 +288,4 @@ section[class = 'need-love'],
     margin-top: 30px;
   }
 }
+
