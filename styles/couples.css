@@ -161,7 +161,7 @@ section[class = 'need-love'],
   box-shadow: 0px 0px 8px 0px #E3DFEE;
   transform: rotate(-2deg);
   z-index: -1;
-  margin-bottom: -12.5vw;
+  margin-bottom: -100px;
 }
 
 .need-love > img {
