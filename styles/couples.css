@@ -185,10 +185,32 @@ section[class = 'need-love'],
   display: grid;
   grid-template-columns: auto;
   grid-gap: 15px;
-  place-content: center;
+  justify-content: center;
+  align-items: center;
   margin-top: -50px;
   margin-bottom: 300px;
   text-align: center;
+}
+
+.button:first-child {
+  padding: 1.5em 3em;
+  background: linear-gradient(#345388, #233c67);
+  color: white;
+}
+
+.button:first-child:hover {
+  background: linear-gradient(#aabcdd, #99afd7);
+  color: black;
+}
+
+.button:last-child {
+  background: linear-gradient(#aabcdd, #99afd7);
+}
+
+.button:last-child:hover {
+  background: linear-gradient(#aabcdd, #99afd7);
+  background: linear-gradient(#345388, #233c67);
+  color: white;
 }
 
 .learn-more {
@@ -232,7 +254,6 @@ section[class = 'need-love'],
   box-shadow: 0 0 0 10px #233c67,
               0 0 10px 11px rgba(0,0,0,0.15);
 }
-
 
 @media screen and (max-width: 366px) {
   .responsive-text {
