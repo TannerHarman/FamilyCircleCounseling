@@ -120,8 +120,7 @@ section::after {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.0)), to(rgba(0, 0, 0, 0.7)));
-  background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7));
+  background: rgba(0,0,0, .7)
 }
 
 .active::before,
@@ -134,8 +133,8 @@ section::after {
   text-align: center;
 }
 
-.active > h1{
-  bottom: 84px;
+.active h1 {
+  opacity: 0;
 }
 
 .active > .problem {
@@ -161,10 +160,26 @@ section::after {
   transition: opacity linear 300ms;
 }
 
+@media screen and (max-width: 321px) {
+  .responsive-text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 427px) {
+  .responsive-text {
+    font-size: 16px;
+  }
+}
 
 @media screen and (min-width: 881px) {
   main {
     height: 100vh;
+  }
+
+  section::after {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.0)), to(rgba(0, 0, 0, 0.7)));
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7));
   }
 }
 

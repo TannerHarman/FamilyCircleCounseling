@@ -20,3 +20,38 @@ p {
 .button:hover {
   background: #99afd7;
 }
+
+.responsive-text {
+  font-size: 3.75vw;
+}
+
+.responsive-title {
+  font-size: 4.3vw;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 366px) {
+  .responsive-text {
+    font-size: 14px;
+  }
+
+  .responsive-title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 534px) {
+  .responsive-text {
+    font-size: 21px;
+  }
+
+  .responsive-title {
+    font-size: 25px;
+  }
+
+  .pitch {
+    grid-template-columns: repeat(2, auto);
+  }
+}
