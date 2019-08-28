@@ -287,7 +287,7 @@ section[class = 'need-love'],
 
   section[class = 'need-love'],
   .closing {
-    grid-template-columns: 1fr auto 300px auto 1fr;
+    grid-template-columns: 1fr auto 255px auto 1fr;
     grid-template-rows: auto auto 500px auto;
   }
 
@@ -311,7 +311,7 @@ section[class = 'need-love'],
   }
 
   .closing .full-paragraph {
-    margin-top: 180px;
+    margin-top: 160px;
   }
 
   .closing img {
@@ -320,7 +320,6 @@ section[class = 'need-love'],
 
   .pitch {
     grid-template-columns: auto auto;
-    justify-content: center;
   }
 }
 
