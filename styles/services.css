@@ -164,11 +164,19 @@ section::after {
   .responsive-text {
     font-size: 13px;
   }
+
+  .solution > .responsive-title {
+    font-size: 13px;
+  }
 }
 
 @media screen and (min-width: 427px) {
   .responsive-text {
     font-size: 16px;
+  }
+
+  .responsive-title {
+    font-size: 18.361px;
   }
 }
 
