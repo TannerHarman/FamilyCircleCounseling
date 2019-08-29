@@ -2,6 +2,8 @@
 
 ## Complete Before Launch
 * Complete Financial Services Page
+* Change up Homepage Layout
+* Fix Margin issues on Couples page
 
 ## Future optimizations
 * Add Script to insert menu & footer on each page to reduce duplicate code
