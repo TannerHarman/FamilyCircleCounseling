@@ -81,6 +81,26 @@ main section {
               0 0 10px 2.6vw rgba(0,0,0,0.15);
 }
 
+.logo-ebook {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo-ebook * {
+  margin: 20px;
+}
+
+.logo-ebook img {
+  width: 10vw;
+  max-width: 300px;
+}
+
+.ebook {
+  display: grid;
+  place-items: center;
+}
+
 @media screen and (min-width: 800px) { 
   .scrapbook {
     grid-template-columns: 1fr auto 240px auto 1fr;
