@@ -2,7 +2,6 @@
 
 ## Complete Before Launch
 * Complete Financial Services Page
-* Change up Homepage Layout
 
 ## Future optimizations
 * Add Script to insert menu & footer on each page to reduce duplicate code
