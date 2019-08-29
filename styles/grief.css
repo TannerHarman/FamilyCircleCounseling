@@ -85,6 +85,8 @@ main section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .logo-ebook * {
@@ -92,8 +94,8 @@ main section {
 }
 
 .logo-ebook img {
-  width: 10vw;
-  max-width: 300px;
+  width: 30vw;
+  max-width: 200px;
 }
 
 .ebook {
