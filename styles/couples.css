@@ -206,6 +206,7 @@ section[class = 'need-love'],
   place-items: center;
   max-width: 1800px;
   margin: auto;
+  margin-bottom: 50px;
   grid-gap:20px 0;
 }
 
