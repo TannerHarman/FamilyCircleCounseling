@@ -20,6 +20,7 @@ section {
 .opacity-zero,
 .opacity-one {
   opacity: 0;
+  -webkit-transition: opacity linear 300ms;
   transition: opacity linear 300ms;
 }
 
@@ -88,19 +89,36 @@ section > .invite::before {
   left: 50%;
   width: 40px;
   height: 40px;
-  transform: translateX(-50%)
+  -webkit-transform: translateX(-50%)
+             rotate(225deg);
+          transform: translateX(-50%)
              rotate(225deg);
 
   border-top: 2px solid white;
   border-left: 2px solid white;
-  animation: animate 1.5s linear infinite;
+  -webkit-animation: animate 1.5s linear infinite;
+          animation: animate 1.5s linear infinite;
   opacity: 1;
-  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
 }
 
 section > .invite::before {
   top: -80px;
-  animation-delay: 0.0s;
+  -webkit-animation-delay: 0.0s;
+          animation-delay: 0.0s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
 }
 
 @keyframes animate {
@@ -120,7 +138,8 @@ section::after {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0, .7)
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(60%, rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)60%);
 }
 
 .active::before,
@@ -139,6 +158,7 @@ section::after {
 
 .active > .problem {
   opacity: 0;
+  -webkit-transition: opacity linear 100ms;
   transition: opacity linear 100ms;
 }
 
@@ -157,6 +177,7 @@ section::after {
 .active > .solution {
   opacity: 1;
   z-index: 1;
+  -webkit-transition: opacity linear 300ms;
   transition: opacity linear 300ms;
 }
 
@@ -185,14 +206,19 @@ section::after {
     height: 100vh;
   }
 
-  section::after {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.0)), to(rgba(0, 0, 0, 0.7)));
-    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7));
-  }
 }
 
 @media (orientation: landscape) {
   main {
     grid-template-columns: 1fr 1fr;
+  }
+  .invite span {
+    display: inline;
+  }
+}
+
+@media (orientation: portrait) {
+  .invite span {
+    display: none;
   }
 }
