@@ -17,6 +17,10 @@ section {
  overflow: hidden;
 }
 
+section a {
+  text-decoration: none;
+}
+
 .opacity-zero,
 .opacity-one {
   opacity: 0;
@@ -179,6 +183,10 @@ section::after {
   z-index: 1;
   -webkit-transition: opacity linear 300ms;
   transition: opacity linear 300ms;
+}
+
+.responsive-title {
+  font-weight: normal;
 }
 
 @media screen and (max-width: 321px) {
