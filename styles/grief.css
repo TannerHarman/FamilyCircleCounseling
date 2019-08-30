@@ -127,6 +127,7 @@ main section {
   }
 
   .scrapbook p {
+    padding: 20px;
     align-self: end;
   }
 

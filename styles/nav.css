@@ -26,12 +26,12 @@ header {
   font-size: 15px;
 }
 
-li {
+nav li {
   list-style-type: none;
   text-align: center;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: black;
 }
