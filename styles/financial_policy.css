@@ -1,3 +1,12 @@
+.responsive-title {
+  margin: 0;
+}
+
+.responsive-text {
+  width: 65vw;
+  max-width: 225px;
+}
+
 main {
   min-height: 100vh;
   width: 100%;
@@ -10,155 +19,115 @@ main {
   grid-gap: 30px;
 }
 
-.nested-list {
-  margin-left: 40px;
-}
-
-main p,
-main h1 {
-  margin-bottom: 20px;
-}
-
-main h1,
-main h3 {
-  text-align: center;
-}
-
-main h3 {
-  margin-bottom: 10px;
-}
-
-main h1 {
-  grid-column: 1/-1;
-}
-
-li {
-  line-height: 1.5em;
-}
-
-.scrapbook {
-  display: grid;
-  grid-gap: 10px;
-  place-items: center;
-}
-
-.scrapbook img {
-  width: 95%;
-  height: auto;
-  max-width: 500px;
-  background-color: white;
-  padding: 1.5vw;
-  border: 4vw solid black;
-  border-radius: 2px;
-  box-shadow: 0px 0px 8px 0px #E3DFEE;
-  transform: rotate(2deg);
-  z-index: -1;
-  margin: 25px 0px -50px;
-}
-
- .scrapbook p{
-  margin: 2.5vw 6.25vw;
-  background-color: white;
-  padding: 2.5vw;
-  border: 1px solid rgba(0, 0, 0, .8);
-  color: rgba(0, 0, 0, .8);
-  box-shadow: 0 0 0 2.5vw white,
-              0 0 10px 2.6vw rgba(0,0,0,0.15);
-  max-width: 700px;
-}
-
-.scrapbook:nth-child(odd) img {
-  background-color: white;
-  border: 4vw solid #233c67;
-  transform: rotate(-2deg)
-              scaleX(-1);
-}
-
-.scrapbook:nth-child(odd) p {
-  background-color: #99afd7;
-  box-shadow: 0 0 0 2.5vw #99afd7,
-              0 0 10px 2.6vw rgba(0,0,0,0.15);
-}
-
-.logo-ebook {
+.short-policies {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  min-width: 100px;
+  margin: auto;
+}
+
+.policy-card {
+  padding-top: 4.7vw;
+  margin: 15vw 0vw;
+  width: 65vw;
+  height: 65vw;
+  max-width: 250px;
+  max-height: 250px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  justify-items: center;
+  grid-row-gap: 20px;
+  position: relative;
+}
+
+.policy-card::after,
+.policy-card::before {
+  content: '';
+  width: 70vw;
+  height: 70vw;
+  max-width: 300px;
+  max-height: 300px;
+  background: #233c67;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -35vw;
+  margin-top: -35vw;
+  z-index: -1;
+}
+
+.policy-card::after {
+  background: #ccdbee;
+  transform: rotate(-2deg);
+} 
+
+.policy-card::before {
+  transform: rotate(2deg);
+}
+
+.icon-container {
+  display:grid;
+  place-items: center;
+  font-size: 9.6vw;
+  position: absolute;
+  height: 17.92vw;
+  width: 17.92vw;
+  top: -15.5vw;
+  color: rgba(255, 255, 255, .859);
+  background-color: #4470ad;
+  border-radius: 50%;
   text-align: center;
 }
 
-.logo-ebook * {
-  margin: 20px;
-}
-
-.logo-ebook img {
-  width: 30vw;
-  max-width: 200px;
-}
-
-.ebook {
-  display: grid;
-  place-items: center;
-}
-
-@media screen and (min-width: 800px) { 
-  .scrapbook {
-    grid-template-columns: 1fr auto 240px auto 1fr;
-    grid-template-rows: auto auto 400px auto;
-  }
-
-  .scrapbook .responsive-title {
-    grid-column: 2/4;
-    grid-row: 3/4;
-    align-self: center;
-    margin-bottom: 100px;
-    background-color: white;
-    padding: calc(1vw + 3px);
-    border: 1px double lightgray;
-  }
-
-  .scrapbook:nth-child(odd) .responsive-title {
-    grid-column: 3/-1;
-    grid-row: 3/4;
-  }
-
-  .scrapbook:nth-child(odd) img,
-  .scrapbook:nth-child(even) p {
-    grid-column: 2/4;
-    grid-row: 2/-2;
-  }
-
-  .scrapbook:nth-child(odd) p,
-  .scrapbook:nth-child(even) img {
-    grid-column: -4/-2;
-    grid-row: 3/-1;
-  }
-
-  .scrapbook p {
-    align-self: end;
-    padding: 20px;
-  }
-
-  .scrapbook > img {
-    padding: 12px;
-    border-width: 32px !important;
-    margin-bottom: 0;
-  }
-
-  .scrapbook:nth-child(even) p {
-    box-shadow: 0 0 0 20px white,
-                0 0 10px 21px rgba(0,0,0,0.15);
-  }
-
-  .scrapbook:nth-child(odd) p {
-    box-shadow: 0 0 0 20px #99afd7,
-    0 0 10px 21px rgba(0,0,0,0.15);
+@media screen and (min-width: 412px) {
+  .policy-card::after,
+  .policy-card::before {
+    margin-left: -150px;
+    margin-top: -150px;
   }
 }
 
-@media screen and (min-width: 881px) {
-  main {
-    padding:70px 20px;
+@media screen and (min-width: 500px) {
+  .policy-card {
+    margin: 50px;
+    padding-top: 20px;
   }
+}
+@media screen and (min-width: 427px) {
+  .responsive-text {
+    font-size: 16px;
+  }
+
+  .responsive-title {
+    font-size: 18px;
+  }
+
+  .icon-container {
+    font-size: 40px;
+    top: -65px;
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 366px) {
+  .responsive-text {
+    font-size: 14px;
+  }
+
+  .responsive-title {
+    font-size: 16px;
+  }
+
+  .icon-container {
+    font-size: 35.5px;
+    top: -50px;
+    height: 65px; 
+    width: 65px;  
+  }
+  
 }
