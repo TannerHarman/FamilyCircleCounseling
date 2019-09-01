@@ -7,6 +7,10 @@
   max-width: 225px;
 }
 
+main h1 {
+  text-align: center;
+}
+
 main {
   min-height: 100vh;
   width: 100%;
@@ -16,10 +20,12 @@ main {
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 30px;
+  grid-gap: 100px;
 }
 
-.short-policies {
+.short-policies,
+.insurance-policy .ins-restrictions,
+.closing-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,7 +35,7 @@ main {
   margin: auto;
 }
 
-.policy-card {
+.policy-note {
   padding-top: 4.7vw;
   margin: 15vw 0vw;
   width: 65vw;
@@ -44,8 +50,8 @@ main {
   position: relative;
 }
 
-.policy-card::after,
-.policy-card::before {
+.policy-note::after,
+.policy-note::before {
   content: '';
   width: 70vw;
   height: 70vw;
@@ -60,12 +66,12 @@ main {
   z-index: -1;
 }
 
-.policy-card::after {
+.policy-note::after {
   background: #ccdbee;
   transform: rotate(-2deg);
 } 
 
-.policy-card::before {
+.policy-note::before {
   transform: rotate(2deg);
 }
 
@@ -77,26 +83,127 @@ main {
   height: 17.92vw;
   width: 17.92vw;
   top: -15.5vw;
-  color: rgba(255, 255, 255, .859);
+  color: rgb(5, 197, 5);
   background-color: #4470ad;
   border-radius: 50%;
   text-align: center;
 }
 
+.icon-container .fa-calendar-times {
+  color: rgb(248, 83, 83);
+}
+
+.scrapbook {
+  display: grid;
+  grid-gap: 10px;
+  place-items: center;
+}
+
+.scrapbook img {
+  width: 95%;
+  height: auto;
+  max-width: 500px;
+  background-color: white;
+  padding: 1.5vw;
+  border: 4vw solid black;
+  border-radius: 2px;
+  box-shadow: 0px 0px 8px 0px #E3DFEE;
+  transform: rotate(2deg);
+  z-index: -1;
+  margin: 25px 0px -10vw;
+}
+
+ .scrapbook p{
+  margin: 2.5vw 6.25vw;
+  background-color: white;
+  padding: 2.5vw;
+  border: 1px solid rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, .8);
+  box-shadow: 0 0 0 2.5vw white,
+              0 0 10px 2.6vw rgba(0,0,0,0.15);
+  max-width: 700px;
+}
+
+.insurance-policy {
+  display: grid;
+  grid-gap: 50px;
+  place-items: center;
+}
+
+.policy-card {
+  display: grid;
+  grid-template-rows: minmax(100px, auto) 2fr;
+  grid-row-gap: 20px;
+  width: 80vw;
+  height: 54vw;
+  max-width: 550px;
+  max-height: 350px;
+  margin: 50px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.15);
+}
+
+.policy-card .responsive-text,
+.policy-card .responsive-title {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+  padding: 0px 20px;
+}
+
+.policy-card .responsive-title {
+  background-color: #99afd7;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.closing-cards .policy-card {
+  min-height: 350px;
+  max-height: none;
+  height: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .policy-card {
+    height: 133vw;
+    max-width: 350px;
+  }
+}
+
 @media screen and (min-width: 412px) {
-  .policy-card::after,
-  .policy-card::before {
+  .policy-note::after,
+  .policy-note::before {
     margin-left: -150px;
     margin-top: -150px;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .policy-card {
+  .policy-note {
     margin: 50px;
     padding-top: 20px;
   }
+
+  .ins-restrictions .policy-note::before,
+  .ins-restrictions .policy-note::after  {
+    margin-left: -115px;
+    margin-top: -115px;
+  }
+
+  .ins-restrictions .policy-note {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  .ins-restrictions .policy-note::before,
+  .ins-restrictions .policy-note::after {
+    max-width: 250px;
+    max-height: 250px;
+  }
 }
+
 @media screen and (min-width: 427px) {
   .responsive-text {
     font-size: 16px;
@@ -113,6 +220,46 @@ main {
     width: 75px;
   }
 }
+
+
+  @media screen and (min-width: 881px) {
+    main {
+      margin-top: 50px;
+    }
+
+    .scrapbook {
+      grid-template-columns: 1fr auto minmax(10vw, 200px) auto 1fr;
+      grid-template-rows: auto auto;
+    }
+  
+    .scrapbook h2{
+      grid-column: 2/4;
+      grid-row: 1/2;
+      align-self: end;
+      background-color: white;
+      padding: calc(1vw + 3px);
+      border: 1px double lightgray;
+    }
+    .scrapbook img {
+      grid-column: -4/-2;
+      grid-row: 1/-1;
+      align-self: center;
+      padding: 12px;
+      border-width: 32px !important;
+      margin-bottom: 0;
+    }
+  
+    .scrapbook p{
+      grid-column: 2/4;
+      grid-row: 2/-1;
+    }
+  
+    .scrapbook p {
+      align-self: end;
+      padding: 20px;
+      margin: 20px 60px;
+    }
+  }
 
 @media screen and (max-width: 366px) {
   .responsive-text {
