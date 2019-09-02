@@ -8,3 +8,4 @@
 * Refactor Service.js. Code is terrible right now.
 * Refactor CSS Code to be more concise - Especially Greif & Couples pages. Very similar. No need for such repeat code.
 * Add intersection observer to change background for Menu on scroll.
+* Add a custom contact page
