@@ -159,6 +159,14 @@ main {
   padding: 20px;
 }
 
+.insurance-policy .ins-restrictions {
+  margin-top: -60px;
+}
+
+.insurance-policy i {
+  color: white;
+}
+
 .closing-cards .policy-card {
   min-height: 350px;
   max-height: none;
