@@ -1,7 +1,6 @@
 # Task List
 
 ## Complete Before Launch
-* Get fonts for website
 
 ## Future optimizations
 * Add Script to insert menu & footer on each page to reduce duplicate code
