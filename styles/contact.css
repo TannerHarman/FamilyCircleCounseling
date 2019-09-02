@@ -79,13 +79,13 @@ section > form {
   height: 150px;
 }
 
-.button {
+.btn {
   height: 40px;
   width: 200px;
   justify-self: center;
 }
 
-.button > input {
+.btn > input {
   height: 100%;
   width: 100%;
 }
