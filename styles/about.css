@@ -66,7 +66,16 @@ section {
               #ccdbee 25% 27%,
               #99afd7 30%,
               #6888BE);
-  grid-gap: 20px;
+  grid-gap: 30px;
+}
+
+.appointment-options {
+  background: white;
+  place-items: center;
+}
+
+.appointment-options div h3 {
+  text-align: center;
 }
 
 section .img-container {
@@ -100,6 +109,11 @@ section p {
   place-self: center;
 }
 
+.sign-off {
+  margin-top: 10px;
+  text-indent: 0;
+}
+
 @media screen and (min-width: 949px) {
   .heading {
     min-height: 80vh;
@@ -128,9 +142,17 @@ section p {
     object-fit: cover;
     object-position: left bottom;
   }
-}
 
-.sign-off {
-  margin-top: 10px;
-  text-indent: 0;
+  .appointment-options {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .appointment-options h1 {
+    grid-column: 1/-1;
+  }
+
+  .appointment-options div {
+    max-width: 500px;
+  }
 }

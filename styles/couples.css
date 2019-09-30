@@ -172,12 +172,23 @@ section[class = 'need-love'],
   grid-gap: 15px;
 }
 
+.appointment-options {
+  max-width: 500px; 
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.appointment-options h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .pitch {
   display: grid;
   justify-content: center;
   grid-gap: 15px;
   place-items: center;
-  margin-top: -50px;
   text-align: center;
   margin-bottom: 100px;
 }
