@@ -1,6 +1,7 @@
 const menuButton = document.querySelector('.menu-button');
 const menuPopup = document.querySelector('.menu-items');
 
+
 menuButton.addEventListener('click', () => {
   menuPopup.id == 'menu-hide' || menuPopup.id == 'menu' ? menuPopup.id = 'menu-show' : menuPopup.id = 'menu-hide';
 
@@ -26,5 +27,4 @@ let setPhoneLink = () => {
     emailLink.classList.add('hover-info');
   }
 }
-
 setPhoneLink();

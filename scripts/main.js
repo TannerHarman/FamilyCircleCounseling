@@ -9,3 +9,6 @@ let iOSBackgroundFix = () => {
 }
 
 iOSBackgroundFix();
+
+const year = new Date().getFullYear();
+document.querySelector('#year').innerHTML= year;
