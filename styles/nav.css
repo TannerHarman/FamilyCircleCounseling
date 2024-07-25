@@ -178,7 +178,7 @@ nav a {
 }
 
 #contact::after {
-  content: '(307) 347-4001';
+  content: '(307) 323-2521';
   margin-left: 0.5em;
 }
 
@@ -237,7 +237,7 @@ nav a {
 
 @media screen and (max-width: 780px) {
   #contact::after {
-    content: '(307) 347-4001';
+    content: '(307) 323-2521';
   }
 
   .menu-item {
