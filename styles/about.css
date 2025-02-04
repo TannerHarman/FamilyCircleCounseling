@@ -25,6 +25,12 @@
   background-attachment: initial;
 }
 
+#theresaHeading {
+  background-image: url('../images/sitePhotos/Theresa.jpg');
+  background-position: 25% 100%;
+  background-attachment: initial;
+}
+
 .heading::before {
   content: '';
   position: absolute;
@@ -54,6 +60,10 @@
 
 #janetHeading div {
   top: 70%;
+}
+
+#theresaHeading div {
+  top: 50%;
 }
 
 .heading > div > div {
@@ -112,6 +122,12 @@ section .img-container {
   object-position: right 3em bottom 3em;
 }
 
+#theresaImgContainer > img {
+  object-fit: cover;
+  height: 155%;
+  object-position: right 0em bottom 10em;
+}
+
 section p {
   text-indent: 1.5em;
 }
@@ -119,6 +135,14 @@ section p {
 .content{
   display: grid;
   grid-gap: 10px;
+}
+
+#theresaContent p span {
+  font-style: italic;
+  display: block;
+  margin: 10px 0;
+  padding: 0 40px;
+  text-indent: 0;
 }
 
 .button {
