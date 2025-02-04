@@ -19,6 +19,12 @@
           
 }
 
+#janetHeading {
+  background-image: url('../images/sitePhotos/Janet.jpg');
+  background-position: 42% 0%;
+  background-attachment: initial;
+}
+
 .heading::before {
   content: '';
   position: absolute;
@@ -44,6 +50,10 @@
           filter: drop-shadow(0 0 10px  rgba(0, 0, 0, .35));
   -webkit-box-shadow: 0 0 50px 20px rgba(0, 0, 0, .35);
           box-shadow: 0 0 50px 20px rgba(0, 0, 0, .35);
+}
+
+#janetHeading div {
+  top: 70%;
 }
 
 .heading > div > div {
@@ -94,6 +104,12 @@ section .img-container {
   object-fit: cover;
   object-position: left bottom;
   height: 150%;
+}
+
+#janetImgContainer > img {
+  object-fit: cover;
+  height: 155%;
+  object-position: right 3em bottom 3em;
 }
 
 section p {
