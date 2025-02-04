@@ -2,18 +2,18 @@ p {
   line-height: 1.4em;
 }
 @media screen and (max-width: 343px) {
-  nav > #navbar > a > .logo > div > p {
+  nav #navbar a .logo div p {
     font-size: 12px;
     font-weight: bold;
   }
 }
 
 @media screen and (max-width: 445px) {
-  nav > #navbar  {
+  nav #navbar  {
     grid-template-columns: 50px 1fr 50px;
   }
 
-  nav > #navbar > #email {
+  nav #navbar #email {
     display: none;
   }
 }
@@ -51,47 +51,6 @@ nav a {
   border: 1px solid gray;
 }
 
-#menu,
-#menu-hide {
-  margin-bottom: -300px;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  z-index: 1;
-}
-
-#menu-hide {
-  -webkit-transition: margin-bottom ease-out 150ms,
-              -webkit-transform ease-out 150ms;
-  transition: margin-bottom ease-out 150ms,
-              -webkit-transform ease-out 150ms;
-  transition: margin-bottom ease-out 150ms,
-              transform ease-out 150ms;
-  transition: margin-bottom ease-out 150ms,
-              transform ease-out 150ms,
-              -webkit-transform ease-out 150ms;
-}
-
-#menu-show {
-  grid-gap: 1px;
-  margin-bottom: 30px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  overflow: hidden;
-
-  -webkit-transition: margin-bottom ease-out 150ms,
-              -webkit-transform ease-out 150ms;
-
-  transition: margin-bottom ease-out 150ms,
-              -webkit-transform ease-out 150ms;
-
-  transition: margin-bottom ease-out 150ms,
-              transform ease-out 150ms;
-
-  transition: margin-bottom ease-out 150ms,
-              transform ease-out 150ms,
-              -webkit-transform ease-out 150ms;
-}
-
 .menu-item {
   height: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(10, 10, 10)), to(rgb(2, 11, 15)));
@@ -117,10 +76,9 @@ nav a {
   max-width: 100%;
   margin-bottom: 0px;
   border-radius: 0;
-  z-index: 2;
 }
 
-#navbar > a > .logo {
+#navbar a .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +90,7 @@ nav a {
           justify-content: center;
 }
 
-#navbar > a > .logo > div {
+#navbar a .logo div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,7 +114,7 @@ nav a {
   margin-right: 5px;
 }
 
-#navbar > .menu-button {
+#navbar .menu-button {
   font-size: 30px;
   cursor: pointer;
 }
@@ -166,14 +124,14 @@ nav a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.menu-items > a > .menu-item > .fas {
+.menu-items .menu-item .fas {
   margin-right: 0.5em;
 }
 
@@ -228,7 +186,7 @@ nav a {
     font-size: 13px;
   }
 
-  .menu-items > a > .menu-item > .fas {
+  .menu-items a .menu-item .fas {
     margin-right: 0.4em;
     font-size: 12px;
   }
@@ -250,6 +208,64 @@ nav a {
   header {
     bottom: 0;
   }
+
+  #navbar {
+    position: relative;
+    z-index: 2;
+  }
+
+  .aboutWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1px;
+  }
+
+  .menu-item:first-child {
+    grid-column-start: span 3;
+  }
+
+  #menu,
+  #menu-hide {
+  margin-bottom: -290px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: -1;
+  position: relative;
+}
+
+  #menu-hide {
+  -webkit-transition: margin-bottom ease-out 150ms,
+              -webkit-transform ease-out 150ms;
+  transition: margin-bottom ease-out 150ms,
+              -webkit-transform ease-out 150ms;
+  transition: margin-bottom ease-out 150ms,
+              transform ease-out 150ms;
+  transition: margin-bottom ease-out 150ms,
+              transform ease-out 150ms,
+              -webkit-transform ease-out 150ms;
+}
+
+#menu-show {
+  grid-gap: 1px;
+  margin-bottom: 30px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  overflow: hidden;
+
+  -webkit-transition: margin-bottom ease-out 150ms,
+              -webkit-transform ease-out 150ms;
+
+  transition: margin-bottom ease-out 150ms,
+              -webkit-transform ease-out 150ms;
+
+  transition: margin-bottom ease-out 150ms,
+              transform ease-out 150ms;
+
+  transition: margin-bottom ease-out 150ms,
+              transform ease-out 150ms,
+              -webkit-transform ease-out 150ms;
+}
+
 }
 
 @media screen and (min-width: 881px) {
@@ -266,7 +282,7 @@ nav a {
     padding-bottom: 10px;
   }
   
-  header > nav {
+  header nav {
     display: grid;
     grid-template-columns: auto minmax(600px, 900px) minmax(20px, auto);
     color: black; 
@@ -282,8 +298,8 @@ nav a {
     margin: 0px;
   }
 
-  nav > .menu-items,
-  nav > #navbar {
+  nav .menu-items,
+  nav #navbar {
     width: 100%;
     max-width: 100%;
     border: none;
@@ -292,7 +308,7 @@ nav a {
     overflow: visible;
   }
 
-  nav > #navbar {
+  nav #navbar {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     background: transparent;
@@ -300,7 +316,7 @@ nav a {
     grid-template-columns: minmax(275px, 300px) minmax(auto, 300px);
   }
 
-  nav > .menu-items {
+  nav .menu-items {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 
@@ -332,9 +348,28 @@ nav a {
     border-bottom: 3px solid rgba(253, 251, 251, 1);
   }
   
-  #navbar > .menu-button,
+  #navbar .menu-button,
   #email,
   #phone {
     display: none;
+  }
+
+  .aboutWrapper {
+    height: 40px;
+    overflow: hidden;
+  }
+  
+  .aboutWrapper:hover {
+    overflow:visible;
+  }
+  
+  .menu-items .drop {
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    margin-left: 33px;
+    margin-right: -33px;
+    width: 100px;
   }
 }
