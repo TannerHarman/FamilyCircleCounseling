@@ -31,3 +31,5 @@ setPhoneLink();
 
 const year = new Date().getFullYear();
 document.querySelector('#year').innerHTML= year;
+
+document.querySelector('#experience').innerHTML= year - 2010;
