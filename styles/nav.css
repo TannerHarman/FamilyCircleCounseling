@@ -135,11 +135,6 @@ nav a {
   margin-right: 0.5em;
 }
 
-#contact::after {
-  content: '(307) 323-2521';
-  margin-left: 0.5em;
-}
-
 .hover-info[data-info] {
   position: relative;
 }
@@ -194,10 +189,6 @@ nav a {
 }
 
 @media screen and (max-width: 780px) {
-  #contact::after {
-    content: '(307) 323-2521';
-  }
-
   .menu-item {
     font-size: 15px;
   }
