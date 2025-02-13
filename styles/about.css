@@ -195,6 +195,12 @@ section p {
     max-width: 500px;
   }
 
+  @media screen and (min-width: 949px) and (max-height: 800px) {
+    .heading { 
+      height: 90vh;
+    }
+  }
+
   @media screen and (min-width: 1800px){
      main {
       height: 100vh;
