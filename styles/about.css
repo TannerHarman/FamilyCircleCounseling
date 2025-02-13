@@ -1,5 +1,5 @@
 .heading {
-  min-height: 75vh;
+  height: 75vh;
   max-height: 800px;
   width: 100%;
   background-image: url('../images/sitePhotos/IMG_20190818_190414-min.jpg');
@@ -26,7 +26,7 @@
 
 #theresaHeading {
   background-image: url('../images/sitePhotos/Theresa.jpg');
-  background-position: 50% 90%;
+  background-position: 10% 63%;
   background-attachment: initial;
 }
 
@@ -154,10 +154,6 @@ section p {
 }
 
 @media screen and (min-width: 949px) {
-  .heading {
-    min-height: 80vh;
-  }
-
   .heading > div {
     align-self: center;
   }
@@ -209,13 +205,14 @@ section p {
 
     #theresaHeading {
       background-image: url('../images/sitePhotos/Theresa.jpg');
-      background-position: 50% 90%;
+      background-position: 50% 80%;
       background-size: 175%;
       overflow: hidden;
     }
 
     .heading {
       grid-row: 1/4;
+      height: 100vh;
       max-height: 100%;
     }
 
