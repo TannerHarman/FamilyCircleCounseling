@@ -62,7 +62,7 @@
 }
 
 #theresaHeading div {
-  top: 50%;
+  top: 70%;
 }
 
 .heading > div > div {
@@ -115,10 +115,16 @@ section .img-container {
   height: 150%;
 }
 
+#janetImgContainer {
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
 #janetImgContainer > img {
-  object-fit: cover;
-  height: 155%;
-  object-position: right 3em bottom 3em;
+  object-fit: contain;
+  object-position: center;
+  height: 100%;
 }
 
 #theresaImgContainer > img {
